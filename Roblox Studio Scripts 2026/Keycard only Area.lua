@@ -1,12 +1,11 @@
 --//Services
 local Players = game:GetService("Players") --Variable for Players
-local PhysicsService = game:GetService("PhysicsService") --Variable for PhysicsService
 
 --//Variables
 local wall = script.Parent --Variable for wall
 
 --//Collision Groups
-PhysicsService:RegisterCollisionGroup("KeycardAccess")
+workspace:RegisterCollisionGroup("KeycardAccess")
 
 --//Function
 wall.Touched:Connect(function(hit) --When wall is touched
@@ -31,5 +30,5 @@ wall.Touched:Connect(function(hit) --When wall is touched
 end)
 
 --//Collision Group Settings
-PhysicsService:CollisionGroupSetCollidable("KeycardAccess", "KeycardAccess", false) --Make parts in this collision group not collidable with other parts in the same collision group
+workspace:CollisionGroupSetCollidable("KeycardAccess", "KeycardAccess", false) --Make parts in this collision group not collidable with other parts in the same collision group
 wall.CollisionGroup = "KeycardAccess" --Set the wall's collision group

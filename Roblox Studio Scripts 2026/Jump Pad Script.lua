@@ -12,7 +12,6 @@ jumpPad.Touched:Connect(function(hit) --When jumpPad is touched
 	if humanoid and rootPart and not cooldown[character] then --confirm character
 		cooldown[character] = true --add to cooldown table
 
-		rootPart.CFrame = rootPart.CFrame + Vector3.new(0, 2, 0) --Add initial height
 		rootPart.AssemblyLinearVelocity = Vector3.new( --Launch character into air
 			rootPart.AssemblyLinearVelocity.X,
 			jumpPower,

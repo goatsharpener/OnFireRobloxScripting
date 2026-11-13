@@ -35,5 +35,5 @@ RemoteEvent.OnClientEvent:Connect(function()
 end)
 
 
-Watch the Full Video to set it up/learn how it works
-https://youtu.be/x4xEO192oPA
+--Watch the Full Video to set it up/learn how it works
+--https://youtu.be/x4xEO192oPA
